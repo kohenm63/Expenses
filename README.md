@@ -1,68 +1,82 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://github.com/Zackazt/bills-tutorial/blob/master/src/Components/App/App.css
+[ ]css >>>>>
 
-## Available Scripts
+    //center  element in the screen horizontally
 
-In the project directory, you can run:
+    margin: auto;
+    border-radius: 15px 50px; 
+    first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners:
 
-### `npm start`
+[ ] in index.css >>>
+    []body{
+    
+    background-image: url('./bg.jpg');
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[ ]add bootstrap >>>>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+##################################### next  #####################################
+[ ]AddBill component +css >>>
+    rfc(snippet)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    remember! useState returns an array with 2 functions inside of it!
+    1-st - initial value
+    2-nd - function that updates that initioal value
 
-### `npm run build`
+** every time we change the input we are going to update the state with the value of that input
+and its goin to be synchronisd with the value 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+** useEffect == componentDidMount in class based comp method
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[ ] Validation of inputs
+[ ] Clear the form after submmition
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##################################### next  #####################################
+[ ]Context   
+https://reactjs.org/docs/context.html
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+    []create the context
+    []provide a context value
+    []consume the context value
 
-### `npm run eject`
+    [ ]make changes in App.js file  !!!
+##################################### next  #####################################
+[ ] useEffect ('componentDidMount' in js version )
+[ ]updateBills
+    []spread operator 
+    JavaScript | Spread Operator. Spread operator allows an iterable to expand in places where 0+ arguments are expected. It is mostly used in variable array where there is more than 1 values are expected.It allows us the privilege to obtain a list of parameters from an array.
+    show all the bills from local storage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[ ]Bill list component
+    []map method
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[ ]editBill function in BillContext.js file
+    [ ]filter method 
+[ ]alaphabetical ordrer of list in BillContext
+    []sort method
+##################################### next  #####################################
+[ ]BillTotal component
+    []reduce method
+        []accumulator
+        []value
+    
+The accumulator accumulates callback's return values. It is the accumulated value previously returned in the last invocation of the callback—or initialValue, if it was supplied (see below).
+currentValue
+The current element being processed in the array.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
-## Learn More
+[v]The span tag is used to group inline-elements in a document. 
+    
+##################################### next  #####################################
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##################################### next  #####################################
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##################################### next  #####################################
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

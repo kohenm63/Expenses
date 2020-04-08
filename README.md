@@ -75,8 +75,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 [v]The span tag is used to group inline-elements in a document. 
     
 ##################################### next  #####################################
-
+https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/17039152#overview
 ##################################### next  #####################################
+deploy >>>
 
+https://www.youtube.com/watch?v=F8s4Ng-re0E
 ##################################### next  #####################################
 

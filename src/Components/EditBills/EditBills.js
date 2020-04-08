@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import './style.css';
 import { BillContext } from '../../Context/BillContext';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const EditBills = () => {
 
@@ -25,7 +26,12 @@ const EditBills = () => {
                     enabled: bill.enabled,
                     monthlyCost: e.target.value
                   })}></input>
-                  <h6 onClick={() => deleteBill(bill)} className='delete-button'>DELETE</h6>
+                  <h6 onClick={() => deleteBill(bill)} className='delete-button'>
+                  <DeleteIcon 
+                  style={{ color: '#d32222b3' }} 
+                  fontSize="large" 
+
+                  /></h6>
               </div>
               <hr></hr>
             </div>
